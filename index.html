@@ -37,12 +37,23 @@
              </div> 
             </header>
 
+            <div class="comment-form">
+                <input class="comment1" placeholder="Add Username">
+                <input class="comment1" placeholder="Add Comment">
+                <button>Post</button>
+            </div>
             <div class="post">
                 <div class="date">Today is Thursday</div>
                 <img class="post-img" src="https://cdn.pixabay.com/photo/2019/10/01/21/42/caravansary-4519442_960_720.jpg">
                 <div class="desc">This is the image description. <br>This is the place that your describe the item you are positing. </div>
-                <a href="#">Add a Comment</a>
+                <div id="comments-modal" class="modal">
+                    <div class="modal-content">
+                      Add Comment
+                    </div>
+                </div>
             </div>
+
+            
         
             <main class="main-page">
               <div id="posts-container" class="content posts-container">
