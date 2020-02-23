@@ -91,6 +91,9 @@ header {
 #post1 , .post {
 	margin-top: 2em;
 	text-align: center;
+	background-color: #f7fbff;
+	border-radius: 50px;
+	padding:20px;
 }
 
 /* Targets first article element */
