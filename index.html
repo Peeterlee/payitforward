@@ -3,13 +3,48 @@
   <head>
     <title>Pay It Forward</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="popstyle.css">
+    
+
+    <script>
+    var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
+    
+    
+    
+    </script>
   </head>
   <body>
 		<header>
             <h1>Pay IT FORWARD</h1>
             <p>Clothing Donation For the 21st Century</p>
 		
-		</header>
+    </header>
+    
+    <button class="open-button" onclick="openForm()">+</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Clothes Donation</h1>
+
+    <input type="file" accept="image/*" onchange="loadFile(event)">
+
+<div id="previewImg">
+
+  <img id="output"/>
+</div>
+    <label for="URL"><b>Post URL</b></label>
+
+
+    <label for="Dec"><b>Description</b></label>
+    <input type="text" placeholder="short cloth Description" name="Dec" required>
+
+    <button type="submit" class="btn">Post</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
 
 	
 		<main class="content">
@@ -75,7 +110,20 @@
 	
 		<footer>
 			<p>&copy; Copyright 2020</p>
-		</footer>
+    </footer>
+    
+    <script>
+
+
+
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
 		
   </body>
 </html>
