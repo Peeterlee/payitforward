@@ -1,99 +1,167 @@
+/* Import Google Fonts 
+------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
-  body{
-      background-color:#DDDDDA;
-      height:1000vh;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: lighter;
-  }
-  
-  .page-layout {
-    display: flex;
-    flex-direction: column;    
-  }
-  
-  .page-header {
-    height: 190px;
-    width: 100%;
-    border-bottom: 7px solid #DBDBDB;
-    background-color:#C2C8C5;
-  }
-  
-  .header-content {
+/* Global
+------------------------------*/
+
+
+html {
+	font-size: 62.5%; 
+}
+
+body {
+	color: #212121;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem; /* 16px */
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+/* Headings - Level 1 */
+h1 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Headings - Level 2 */
+h2 {
+	font-size: 2.6rem;
+	font-weight: 500;
+	margin-bottom: 0.25em;
+}
+
+/* Paragraphs */
+p {
+	margin-bottom: 1.5em;
+}
+
+/* Target the last paragraph element of a child */
+p:last-child {
+	margin-bottom: 0;
+}
+
+/* Links */
+a {
+	color: #3F6083;
+	font-weight: 500;
+}
+
+/* Link hover state */
+a:hover {
+	text-decoration: none;
+}
+
+/* Images */
+img {
+	max-width: 100%;
+	border-radius: 4px; /* Rounded corners */
+}
+
+/* Header
+------------------------------*/
+/* Targets all header element */
+header {
+    
     flex-direction:column;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content:center;
-    width:100%;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:100;
-  }
-
-  h2{
-      font-style:italic;
-  }
-
-  .login{
-      font-size:22px;
-      cursor:pointer;
-  }
-
-  .login:hover{
-      color:#4A707A;
-      cursor:pointer;
+	padding: 1.25em;
+	margin-bottom: 2em;
+	justify-content: space-between;
+	border-bottom: 1px solid #dadada;
 }
 
-  .post {
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      margin:50px 0 50px 0;
-      flex-direction:column;
-  }
 
-  .post-img{
-     
-      width:50%;
-      height:auto;
-      border:3px solid black;
-    }
+/* Content
+------------------------------*/
+/* Container */
+.content {
+	padding: 3em 1.5em;
+}
 
-      
-  .desc{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      margin:20px;
-      font-size:15px;
-  }
+/* Post
+------------------------------*/
+/* Post entry */
+#post1 , .post {
+	margin-top: 2em;
+	text-align: center;
+}
 
-  .date{
-      margin:0 0 10px 500px;
-  }
+/* Targets first article element */
+article:first-of-type {
+	margin-top: 0;
+}
 
-  .modal-content{
-      font-size:12px;
-      color:blue;
+/* Post details - category, author, date */
+.post-details {
+	color: #888;
+/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+	padding: 0;
+	margin-bottom: 3em;
+	list-style-type: none;
+}
 
-  }
+/* Post details - lists items */
+.post-details li {
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 10px;
+}
 
-  .comment-form{
-      display:flex;
-      justify-content: center;
-      align-items:center;
-      flex-direction:column;
-      position:absolute;
-      background-color:#4A707A;
-      width:500px;
-      height:100px;
-      border-radius:10px;
-  }
+/* Targets last list item of post details */
+.post-details li:first-child {
+	padding-left: 0;
+}
 
-  .comment1{
-      width:200px;
-      height:auto;
-      margin:10px;
-  }
+/* Post image */
+.post-image {
+	margin-bottom: 2em;
+}
 
- 
+/* Post content */
+.post-content {
+	width: 70%;
+	margin: 0 auto; /* Centers element */
+	text-align: left;
+}
+
+
+
+
+
+/* Footer
+------------------------------*/
+footer {
+	color: #888;
+	font-size: 1.4rem;
+	background: #f1f1f1;
+	padding: 3em 1em;
+	text-align: center;
+}
+
+/* Buttons
+------------------------------*/
+
+.button {
+	background: #3F6083;
+	color: #fff;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 2em 0;
+	padding: 0.85em 1.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Button - hover state */
+.button:hover {
+	background: #1B263B;
+}
