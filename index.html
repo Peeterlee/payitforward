@@ -11,16 +11,17 @@
     var output = document.getElementById('output');
     output.src = URL.createObjectURL(event.target.files[0]);
   };
-    
-    
-    
-    </script>
+
+  </script>
   </head>
+
   <body>
 		<header>
-            <h1>Pay IT FORWARD</h1>
-            <p>Clothing Donation For the 21st Century</p>
-		
+            <img src="imgs/logo.png" width="300px">
+            <div class="desc">"<b>Pay it Forward<b> is your one-stop shop for donating used clothing to less fortunate people. 
+              Simply post your clothing item below and be contacted by someone who wishes to pick up your clothes."
+            </div>
+            <button class="login">LOGIN</button>
     </header>
     
     <button class="open-button" onclick="openForm()">+</button>
@@ -46,38 +47,51 @@
   </form>
 </div>
 
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <form id="login-signup-form">
+        <input id="username" type="text" name="username" placeholder="username">
+        <input id="password" type="password" name="password" placeholder="password">
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a id="login-button" href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
+    <a id="signup-button" href="#!" class="modal-close waves-effect waves-green btn-flat">Sign Up</a>
+  </div>
+</div>
+
+
+
 	
 		<main class="content">
+
+  
+
+      
 			<section class="blog-posts">
 				
-				<div  id="#post1" class="post">
-					<h2>Clothes</h2>
-				
-
+				<div id="#post1" class="post">
 					<figure class="post-image">
 						<img src="https://static1.fashionbeans.com/wp-content/uploads/2019/09/secondhandmainop2.jpg" alt="Jackets">
-                    </figure>
+          </figure>
                     
-                    <ul class="post-details">
-						
-						<li>Added by <a href="#">Mitch Black</a></li>
+          <ul class="post-details">
+            <li>Added by <a href="#">Mitch Black</a></li>
 						<li>June 12, 2020</li>
-					</ul>
-
+          </ul>
+          <h2>Used Jean Jackets</h2>
 					<div class="post-content">
-						<p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor felis 
-              uis egestas pulvinar. Aliquam vel dui est. Integer interdum, erat ac ultricies dignissim, s
-              apien sem feugiat dui, quis vestibulum sem leo et nulla.</p> 
-
-						
+						<p>I recently went through my closet and found 9 jean jackets! These jackets are all vintage
+              and in great condition. I no longer wear them cause I have given up my dirty hippy ways! Take 'em while they last. Namaste.
+            </p> 
 					</div>
-
-					<a class="button" href="">Read more</a>
+          <a class="button" href="">View Comments</a>
+          <a class="button2" href="">Delete</a>
 				</div>
 				
 
 				<div id="post2" class="post">
-					<h2>T-Shirt</h2>
+					
 				
 
 					<figure class="post-image">
@@ -89,15 +103,20 @@
                         <li>Pants</li>
                         <li>Added by <a href="#">Peter</a></li>
 						<li>June 12, 2019</li>
-					</ul>
+          </ul>
+          <h2>New Tie-Dye Shirts</h2>
 
 					<div class="post-content">
-						<p>LLorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor felis quis egestas pulvinar. Aliquam vel dui est. Integer interdum, erat ac ultricies dignissim, sapien sem feugiat dui, quis vestibulum sem leo et nulla..</p> 
+						<p>Before I came to Canada I lived in a van by a river in Korea. The winters were long and cold but in the summer
+              I sold these totally awesome t-shirts to make ends meet. If back-end programming doesn't work out I plan to bring
+              my canadian girlfriend (ajax's) back to Korea to live in the van with me. Can't wait!
+            </p> 
 
 						
 					</div>
 
-					<a class="button" href="">Read more</a>
+          <a class="button" href="">View Comments</a>
+          <a class="button2" href="">Delete</a>
 				</div>
 			
 
@@ -110,9 +129,7 @@
 		
 		
 	
-		<footer>
-			<p>&copy; Copyright 2020</p>
-    </footer>
+
     
     <script>
 

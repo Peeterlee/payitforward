@@ -1,10 +1,6 @@
-/* Import Google Fonts 
-------------------------------*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
-
-/* Global
-------------------------------*/
-
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap");
 
 html {
 	font-size: 62.5%; 
@@ -20,23 +16,63 @@ body {
 
 /* Headings - Level 1 */
 h1 {
-	font-size: 2.2rem;
-	font-weight: 700;
-	letter-spacing: 4px;
-    text-transform: uppercase;
-    text-align: center;
+	font-size: 2.5rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-align: center;
+	color:#7697A0;
+	text-transform: uppercase;
 }
 
 /* Headings - Level 2 */
 h2 {
-	font-size: 2.6rem;
+	font-size: 2.9rem;
 	font-weight: 500;
 	margin-bottom: 0.25em;
+	color:#7697A0;
+	
+}
+
+.desc{
+	text-align:center;
+	font-size: 2.1rem;
+	line-height:1.9;
+	margin:50px 150px 0 150px;
+	font-style:italic;
+	font-family: 'Fredericka the Great'!important;
+	color:#7697A0;
+	
+}
+
+.login{
+	background: #3F6083;
+	color: #fff;
+	border-radius: 4px;
+	margin: 2em 0;
+	padding: 0.85em 1.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size:18px;
+	letter-spacing: 1.5;
+	
 }
 
 /* Paragraphs */
+
+.quote{
+	font-size: 2.9rem;
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-align:center;
+	
+	color:#C2C8C5;
+	font-family: 'Fredericka the Great'!important;
+}
 p {
 	margin-bottom: 1.5em;
+	font-weight: bold;
+	text-align:center;
+	
 }
 
 /* Target the last paragraph element of a child */
@@ -82,7 +118,8 @@ header {
 ------------------------------*/
 /* Container */
 .content {
-	padding: 3em 1.5em;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Post
@@ -164,7 +201,20 @@ footer {
 	text-decoration: none;
 }
 
+.button2 {
+	background: red;
+	color: #fff;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 2em 0;
+	padding: 0.85em 1.25em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
 /* Button - hover state */
 .button:hover {
 	background: #1B263B;
 }
+
+
