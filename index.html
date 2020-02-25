@@ -70,6 +70,30 @@
 </div>
 
 
+<!--Comment Form -->
+
+<div class="form-popupComment" id="PostComent">
+  <form action="/action_page.php" class="form-container">
+    <h1>Post Comment</h1>
+
+  <div id="ShowMsg">
+
+    <p>First Comments</p>
+
+    <p>Second Comments</p>
+
+    <p>Thrid Comments</p>
+  </div>
+
+    <textarea rows="4" cols="50" name="comment" form="usrform">
+      Enter text here...</textarea>
+
+    <button type="submit" class="Comentbtn">Post Comments</button>
+    <button type="button" class="CancelComent" onclick="closeComments()">Close</button>
+  </form>
+</div>
+
+
 
 
 	
@@ -95,7 +119,7 @@
               and in great condition. I no longer wear them cause I have given up my dirty hippy ways! Take 'em while they last. Namaste.
             </p> 
 					</div>
-          <a class="button" href="">View Comments</a>
+          <a class="button" onclick="openComment()">View Comments</a>
           <a class="button2" href="">Delete</a>
 				</div>
 				
@@ -110,8 +134,8 @@
                     
                     <ul class="post-details">
 						
-                        <li>Pants</li>
-                        <li>Added by <a href="#">Peter</a></li>
+                        
+                    <li>Added by <a href="#">Peter</a></li>
 						<li>June 12, 2019</li>
           </ul>
           <h2>New Tie-Dye Shirts</h2>
@@ -125,7 +149,7 @@
 						
 					</div>
 
-          <a class="button" href="">View Comments</a>
+          <a class="button" onclick="openComment()">View Comments</a>
           <a class="button2" href="">Delete</a>
 				</div>
 			
@@ -143,7 +167,7 @@
     
     <script>
 
-
+/*Post Donation*/
 
       function openForm() {
         document.getElementById("myForm").style.display = "block";
@@ -154,13 +178,22 @@
       }
 
 
-
+/*Login Form*/
       function loginForm() {
         document.getElementById("myLogin").style.display = "block";
       }
       
       function closeLogin() {
         document.getElementById("myLogin").style.display = "none";
+      }
+
+/*Post Comment*/
+      function openComment() {
+        document.getElementById("PostComent").style.display = "block";
+      }
+      
+      function closeComments () {
+        document.getElementById("PostComent").style.display = "none";
       }
 
       </script>

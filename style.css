@@ -14,7 +14,7 @@ body {
 	line-height: 1.6;
 }
 
-/* Headings - Level 1 */
+/* Headings*/
 h1 {
 	font-size: 2.5rem;
 	font-weight: 900;
@@ -24,7 +24,7 @@ h1 {
 	text-transform: uppercase;
 }
 
-/* Headings - Level 2 */
+
 h2 {
 	font-size: 2.9rem;
 	font-weight: 500;
@@ -74,8 +74,6 @@ p {
 	text-align:center;
 	
 }
-
-/* Target the last paragraph element of a child */
 p:last-child {
 	margin-bottom: 0;
 }
@@ -99,7 +97,7 @@ img {
 
 /* Header
 ------------------------------*/
-/* Targets all header element */
+
 header {
     
     flex-direction:column;
@@ -133,12 +131,11 @@ header {
 	padding:20px;
 }
 
-/* Targets first article element */
+
 article:first-of-type {
 	margin-top: 0;
 }
 
-/* Post details - category, author, date */
 .post-details {
 	color: #888;
 /*display: flex;
@@ -156,7 +153,7 @@ article:first-of-type {
 	padding: 0 10px;
 }
 
-/* Targets last list item of post details */
+
 .post-details li:first-child {
 	padding-left: 0;
 }
