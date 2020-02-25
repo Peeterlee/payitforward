@@ -21,8 +21,11 @@
             <div class="desc">"<b>Pay it Forward<b> is your one-stop shop for donating used clothing to less fortunate people. 
               Simply post your clothing item below and be contacted by someone who wishes to pick up your clothes."
             </div>
-            <button class="login">LOGIN</button>
+            <button class="login" onclick="loginForm()">LOGIN</button>
     </header>
+
+
+<!--Donation Post Form -->
     
     <button class="open-button" onclick="openForm()">+</button>
 
@@ -47,18 +50,25 @@
   </form>
 </div>
 
-<div id="login-modal" class="modal">
-  <div class="modal-content">
-    <form id="login-signup-form">
-        <input id="username" type="text" name="username" placeholder="username">
-        <input id="password" type="password" name="password" placeholder="password">
-    </form>
-  </div>
-  <div class="modal-footer">
-    <a id="login-button" href="#!" class="modal-close waves-effect waves-green btn-flat">Login</a>
-    <a id="signup-button" href="#!" class="modal-close waves-effect waves-green btn-flat">Sign Up</a>
-  </div>
+
+
+<!--Login Form -->
+
+<div class="form-popuplogin " id="myLogin">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+  </form>
 </div>
+
 
 
 
@@ -142,6 +152,17 @@
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
       }
+
+
+
+      function loginForm() {
+        document.getElementById("myLogin").style.display = "block";
+      }
+      
+      function closeLogin() {
+        document.getElementById("myLogin").style.display = "none";
+      }
+
       </script>
 		
   </body>
