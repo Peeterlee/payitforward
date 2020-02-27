@@ -116,27 +116,43 @@ header {
 /* Content
 ------------------------------*/
 
-/* Hero img */
-
-.hero{
-	width: 100%;
-	height: 80vh;
-	background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72, 56, 149, 0.8) 100% ), 
-	url("./imgs/header-bg.jpg") center no-repeat;
-	background-size: cover;
-	position: relative;
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
 }
 
-.hero::before{
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width:100%;
-	height: 4.7em;
-	background: url("./imgs/wave-small.png") center no-repeat;
-	background-size: cover;
+/* hero image */
+
+/* .hero .btn {
+    display: block;
+    width: 200px;
+    padding: 1em;
+    margin-top: 50px;
+    border: 3px solid black;
+} */
+
+
+
+.hero {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://www.thebalance.com/thmb/PuZVaSRG3EX14QOV2bXJisaQywE=/1916x1437/smart/filters:no_upscale()/GettyImages-583903612-5b588612c9e77c00785d6d7e.jpg");
+    background-size: cover;
+    background-position: center center;
+	background-repeat: no-repeat;
+    /* background-attachment: fixed; */
 }
+
+/* hero image end*/
+
 
 
 /* Container */
