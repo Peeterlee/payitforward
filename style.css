@@ -92,7 +92,7 @@ a:hover {
 /* Images */
 img {
 	max-width: 100%;
-	border-radius: 4px; /* Rounded corners */
+	border-radius: 4px; 
 }
 
 /* Header
@@ -166,7 +166,7 @@ article:first-of-type {
 /* Post content */
 .post-content {
 	width: 70%;
-	margin: 0 auto; /* Centers element */
+	margin: 0 auto; 
 	text-align: left;
 }
 
