@@ -112,8 +112,33 @@ header {
 }
 
 
+
 /* Content
 ------------------------------*/
+
+/* Hero img */
+
+.hero{
+	width: 100%;
+	height: 80vh;
+	background: linear-gradient(135deg, rgba(49,24,131,0.9)0%, rgba(72, 56, 149, 0.8) 100% ), 
+	url("./imgs/header-bg.jpg") center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width:100%;
+	height: 4.7em;
+	background: url("./imgs/wave-small.png") center no-repeat;
+	background-size: cover;
+}
+
+
 /* Container */
 .content {
 	align-items: center;
