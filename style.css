@@ -40,7 +40,7 @@ h2 {
 	margin:50px 150px 0 150px;
 	font-style:italic;
 	font-family: 'Fredericka the Great'!important;
-	color:#7697A0;
+	color:black;
 	
 }
 
@@ -90,9 +90,10 @@ a:hover {
 }
 
 /* Images */
-img {
+.logo {
 	max-width: 100%;
 	border-radius: 4px; 
+	margin:30px;
 }
 
 /* Header
@@ -105,8 +106,8 @@ header {
     display: flex;
     align-items: center;
     justify-content:center;
-	padding: 1.25em;
-	margin-bottom: 2em;
+	padding: 10px;
+	margin:20px;
 	justify-content: space-between;
 	border-bottom: 1px solid #dadada;
 }
@@ -139,12 +140,13 @@ header {
 
 .hero {
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	margin-top:100px;
+    /* align-items: center; */
     text-align: center;
-    background-image: url("https://www.thebalance.com/thmb/PuZVaSRG3EX14QOV2bXJisaQywE=/1916x1437/smart/filters:no_upscale()/GettyImages-583903612-5b588612c9e77c00785d6d7e.jpg");
+    background-image: url(imgs/volunteer.png);
     background-size: cover;
     background-position: center center;
 	background-repeat: no-repeat;
