@@ -22,9 +22,12 @@
               Simply post your clothing item below and be contacted by someone who wishes to pick up your clothes."
             </div>
             <button class="login" onclick="loginForm()">LOGIN</button>
-    </header>
 
-    <section class="hero">
+
+      
+          
+    </header>
+   <section class="hero">
 
       <div class="container">
 
@@ -43,7 +46,7 @@
 
 <!--Donation Post Form -->
     
-    <button class="open-button" onclick="openForm()">+</button>
+<button class="open-button" onclick="openForm()">+</button>
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
@@ -66,60 +69,26 @@
   </form>
 </div>
 
-
-
-<!--Login Form -->
-
-<div class="form-popuplogin " id="myLogin">
-  <form action="/action_page.php" class="form-container">
+  <!--Login Form -->
+  <div class="form-popuplogin" id="myLogin">
+    <form action="/action_page.php" class="form-container">
+    <img src="imgs/payitforwardlogo.png" width="100px" class="pop-img">
     <h1>Login</h1>
 
-    <label for="email"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
+    <label for="email"><b></b></label>
+    <input type="text" placeholder="Username" name="username" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw"><b></b></label>
+    <input type="password" placeholder="Password" name="psw" required>
 
-    <button type="submit" class="loginbtn button1">Login</button>
+    <button type="submit" class="loginbtn button1">LOGIN</button>
 
-    <button type="button" class="btn cancel" onclick="closeLogin()">Close</button>
+    <button type="button" class="btn cancel" onclick="closeLogin()">CLOSE</button>
   </form>
 </div>
+  <main class="content">
 
-
-<!--Comment Form -->
-
-<div class="form-popupComment" id="PostComent">
-  <form action="/action_page.php" class="form-container">
-    <h1>Post Comment</h1>
-
-  <div id="ShowMsg">
-
-    <p>First Comments</p>
-
-    <p>Second Comments</p>
-
-    <p>Thrid Comments</p>
-  </div>
-
-    <textarea rows="4" cols="50" name="comment" form="usrform">
-      Enter text here...</textarea>
-
-    <button type="submit" class="Comentbtn">Post Comments</button>
-    <button type="button" class="CancelComent" onclick="closeComments()">Close</button>
-  </form>
-</div>
-
-
-
-
-	
-		<main class="content">
-
-  
-
-      
-			<section class="blog-posts">
+    <section class="blog-posts">
 				
 				<div id="#post1" class="post">
 					<figure class="post-image">
@@ -142,6 +111,26 @@
 				
 
 				<div id="post2" class="post">
+
+      <!--Comment Form -->
+
+          <div class="form-popupComment" id="PostComent">
+            <form action="/action_page.php" class="form-container">
+              <img src="imgs/payitforwardlogo.png" width="100px" class="pop-img">
+
+              <h1>Comments</h1>
+            <div id="ShowMsg"></div> 
+
+            <input type="text" placeholder="Username" name="username" required>
+          <textarea rows="4" cols="50" name="comment" form="usrform">
+                Enter Comment here...</textarea>
+
+                <button type="submit" class="loginbtn button1">ADD COMMENT</button>
+                <button type="button" class="btn cancel" onclick="closeComments()">CLOSE</button>
+
+            </form>
+          </div>
+
 					
 				
 
