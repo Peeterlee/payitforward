@@ -109,6 +109,7 @@ header {
 	margin-bottom: 2em;
 	justify-content: space-between;
 	border-bottom: 1px solid #dadada;
+	position: relative;
 }
 
 
@@ -140,7 +141,8 @@ header {
 .hero {
     width: 100vw;
     height: 80vh;
-    display: flex;
+	display: flex;
+	position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
