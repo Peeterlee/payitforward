@@ -145,6 +145,7 @@ header {
     display: flex;
 	justify-content: center;
 	margin-top:100px;
+	position: relative;
     /* align-items: center; */
     text-align: center;
     background-image: url(imgs/volunteer.png);
