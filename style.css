@@ -168,7 +168,7 @@ header {
 /* Post
 ------------------------------*/
 /* Post entry */
-#post1 , .post {
+.post {
 	margin-top: 2em;
 	text-align: center;
 	background-color: #f7fbff;
