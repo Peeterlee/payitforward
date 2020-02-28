@@ -6,12 +6,24 @@ html {
 	font-size: 62.5%; 
 }
 
+.donation_msg {
+	color:white;
+	font-size: 26px;
+}
+
+.donation_msg > span {
+	font-size: 30px;
+	font-weight: bold;
+}
+
 body {
 	color: #212121;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem; /* 16px */
 	font-weight: 400;
 	line-height: 1.6;
+	padding:0;
+	margin:0;
 }
 
 /* Headings*/
@@ -139,7 +151,7 @@ header {
 
 
 .hero {
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     display: flex;
 	justify-content: center;
@@ -155,12 +167,31 @@ header {
 
 /* hero image end*/
 
+#total{
+	color:white;
+	font-size: 26px;
+}
 
+#total > span {
+	font-size: 30px;
+	font-weight: bold;
+}
 
 /* Container */
 .content {
 	align-items: center;
 	justify-content: center;
+}
+
+.donation_container, .donation_container > form{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.donation_container> input {
+	width:100px;
 }
 
 /* Post
@@ -250,6 +281,10 @@ footer {
 	padding: 0.85em 1.25em;
 	text-transform: uppercase;
 	text-decoration: none;
+}
+
+.nobutton {
+	display:none;
 }
 
 /* Button - hover state */

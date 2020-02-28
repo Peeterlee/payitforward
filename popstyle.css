@@ -53,27 +53,33 @@ body {font-family: Arial, Helvetica, sans-serif;
 /* Pop up Comment View*/
 .form-popupComment {
   display: none;
-  position: absolute;
-  position: fixed; 
+  position: fixed;
   bottom: 0; 
   margin-bottom: 20px;
   width:400px;
   background-color: white;
   margin-right:40%;
   margin-left: 35%;
-  margin-bottom: 20px;
   border: 3px solid #f1f1f1;
   z-index: 9;
   
 }
 /*Post Comment box*/
-#ShowMsg{
+.ShowMsg{
   width:300px;
-  height:10px;
-  height: auto;
-  padding:90px;
-  background-color: lightgrey;
+  height:90px;
+  padding:30px;
+  margin-bottom:20px;
+  /* background-color: lightgrey; */
   border-radius:10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShowMsg > input {
+  height:14px;
 }
 
 /*Comment Popup ends */
