@@ -18,23 +18,17 @@
   <body>
 		<header>
         <img class="logo" src="imgs/logo.png" width="300px">  
-          
-
     </header>
    <section class="hero">
-
       <div class="container">
-
         <div class="main-massage">
-
           <div class="desc">"<b>Pay it Forward<b> is your one-stop shop for donating used clothing to less fortunate people. 
             Simply post your clothing item below and be contacted by someone who wishes to pick up your clothes."
           </div>
           <button class="login" onclick="loginForm()">LOGIN</button>
         </div>
-
         <div class="form-popuplogin" id="myLogin">
-          <form action="/action_page.php" class="form-container">
+          <form action="/action_page.php" class="form-container" id="login_form">
           <img src="imgs/payitforwardlogo.png" width="100px" class="pop-img">
           <h1>Login</h1>
       
@@ -48,7 +42,7 @@
       
           <button type="button" class="btn cancel" onclick="closeLogin()">CLOSE</button>
         </form>
-      </div>
+        </div>
     </section>
    
 
@@ -179,7 +173,7 @@
 
 /*Login Form*/
       function loginForm() {
-        document.getElementById("myLogin").style.display = "block";
+        document.getElementById("myLogin").style.display = "flex";
       }
       
       function closeLogin() {
